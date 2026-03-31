@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from agent import run_agent; print(run_agent('hello'))
+                                       ~~~~~~~~~^^^^^^^^^
+  File "D:\P\voice_ai_agent\backend\agent.py", line 22, in run_agent
+    agent_executor = create_react_agent(llm, tools=tools, state_modifier=SYSTEM_PROMPT)
+  File "D:\P\voice_ai_agent\backend\venv\Lib\site-packages\typing_extensions.py", line 3004, in wrapper
+    return arg(*args, **kwargs)
+  File "D:\P\voice_ai_agent\backend\venv\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 529, in create_react_agent
+    raise TypeError(
+        f"create_react_agent() got unexpected keyword arguments: {deprecated_kwargs}"
+    )
+TypeError: create_react_agent() got unexpected keyword arguments: {'state_modifier': 'You are a highly capable AI Assistant running locally.\nYou can perform actions like querying a database, sending emails, or searching the internet using your tools.\nWhen the user asks you a question, decide whether to use a tool to get the answer, or just respond directly.\nProvide concise and human-like responses, as your responses may be read aloud by a Text-to-Speech engine.\n'}
