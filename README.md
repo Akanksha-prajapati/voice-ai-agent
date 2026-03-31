@@ -1,4 +1,4 @@
-# Nexus AI Voice Agent
+#AI Voice Agent
 
 This project is a fully local AI Assistant running on your CPU using Meta's Llama 3.2 model. It has a React frontend and a Python FastAPI backend that processes your voice and handles API requests.
 
